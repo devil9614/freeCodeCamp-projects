@@ -1,0 +1,49 @@
+body {
+    background-color: rgb(241, 240, 240);
+}
+
+#main {
+    margin: 20px 50px 20px 50px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(177, 174, 174);
+}
+
+#image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid;
+    border-radius: 50%;
+}
+
+#img-caption {
+    text-align: center;
+    font-family: monospace;
+}
+
+#title {
+    text-align: center;
+}
+
+#tribute-info,
+#tribute-link {
+    display: inline-block;
+    padding-left: 10px;
+}
+
+#more-info {
+    padding-left: 15px;
+}
+
+#heading {
+    text-align: center;
+    color: goldenrod;
+    border-width: 100%;
+    border: 1px solid green;
+}
+
+#image:hover,
+#img-caption:hover,
+#title:hover {
+    transform: scale(1.1);
+}
