@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="css/css.css">
+</head>
+
+<body>
+    <script src="js/js.js"></script>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <div id="survey-text">
+        <h1 id="title">Survey Form</h1>
+        <p id="description">its a small description of the survey form</p>
+    </div>
+    <div id="form-basic" align="center">
+        <form id="survey-form">
+            <label for="name" id="name-label">Name: </label>
+            <input type="text" placeholder="Full Name" id="name" required><br><br>
+            <label for="email" id="email-label">Email: </label>
+            <input type="email" placeholder="Email" id="email" required>
+            <!--if you want to know the logic read the javascript code-->
+            <p id="mail-result"></p>
+            <label for="phone number" id="number-label">Phone No.: </label>
+            <input type="number" placeholder="Phone Number" id="number" max="9999999999" min="1000000000" required>
+            <p id="num-result"></p>
+            <label for="tpe-of-devoloper" id="devoloper">Devoloper type: </label>
+            <select id="dropdown">
+                <option value = "front-end">Front-end</option>
+                <option value = "back-end">Back-end</option>
+                <option value = "full-stack">Full-stack</option>
+            </select>
+            <div>
+                <p>Front-end favorites</p>
+                <input type="radio" value="html" name="html">
+                <label name="html">HTML</label>
+                <input type="radio" value="css" name="css">
+                <label name="css">CSS</label>
+                <input type="radio" value="js" name="js">
+                <label name="js">JavaScript</label>
+            </div>
+            <div>
+                <p>Back-End favorites</p>
+                <input type="checkbox" value="nodejs">
+                <label name="nodejs">Node-JS</label>
+                <input type="checkbox" value="django">
+                <label name="django">Django</label>
+                <input type="checkbox" value="mongodb">
+                <label name="mongodb">MongoDB</label>
+            </div>
+            <br><br>
+            <label name="comments">Any Comments:</label>
+            <textarea id="comments" name="comment" row="4" column="50">Any comments...</textarea>
+            <br><br>
+            <input type="submit" onclick="myFunction()" id="submit" value="submit">
+        </form>
+    </div>
+</body>
+
+</html>
