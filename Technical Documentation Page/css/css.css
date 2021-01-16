@@ -1,0 +1,58 @@
+body {
+    background-color: #000000ff;
+    color: #ffffff;
+}
+
+#main-doc {
+    margin-left: 160px;
+    padding: 0px 10px;
+}
+
+header {
+    font-size: 30px;
+}
+
+#navbar {
+    height: 100%;
+    width: 160px;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    overflow-x: hidden;
+    background-color: blanchedalmond;
+    padding-top: 20px;
+}
+
+#navbar a {
+    text-decoration: none;
+    padding: 6px 8px 8px 16px;
+    color: rgb(109, 107, 107);
+    display: block;
+}
+
+#navbar header {
+    color: black;
+    padding: 6px 8px 8px 16px;
+}
+
+#navbar a:hover {
+    color: black;
+}
+
+p,
+ul,
+ol,
+code {
+    font-size: 20px;
+}
+
+code {
+    background-color: grey;
+}
+
+@media screen and (max-width:480px) {
+    #navbar {
+        padding-top: 15px;
+    }
+}
