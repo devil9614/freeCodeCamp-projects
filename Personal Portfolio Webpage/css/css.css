@@ -1,0 +1,105 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+.columns {
+    float: left;
+    width: 33%;
+    margin-bottom: 20px;
+    padding: 0 8;
+    padding-top: 50px;
+}
+
+.project-tile {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 8px;
+}
+
+.container {
+    padding: 0 16px;
+}
+
+.about {
+    padding: 50px;
+    margin-top: 50vh;
+    text-align: center;
+    background-color: #474e5d;
+    color: white;
+}
+
+.container::after,
+.projects::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+@media screen and (max-width: 650px) {
+    .column {
+        width: 100%;
+        display: block;
+    }
+}
+
+#navbar {
+    background-color: #111;
+    width: 0;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+
+#navbar a {
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    padding: 8px 8px 8px 16px;
+    /* padding-bottom: 16px; */
+    text-decoration: none;
+    transition: 0.3s;
+    margin-left: 20px;
+}
+
+#cross {
+    position: absolute;
+    display: block;
+    font-size: 25px;
+    color: #818181;
+    top: 20px;
+    left: 130px;
+}
+
+#navbar a:hover,
+#cross:hover {
+    color: #f1f1f1;
+}
+
+#nav_open:hover {
+    border: 1px solid black;
+}
+
+#nav_open {
+    position: fixed;
+    top: 12px;
+    left: 12px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+#welcome-section {
+    position: relative;
+    left: 30px;
+    width: 60%;
+    font-size: 120px;
+}
